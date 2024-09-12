@@ -32,8 +32,8 @@ const Home = () => {
 
   return (
    <div>
-    <form className="d-flex w-25 m-auto my-3" role="search">
-        <input ref={searchRef} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+    <form className="d-flex w-75 m-auto my-3" role="search">
+        <input ref={searchRef} className="w-50 mx-2" type="search" placeholder="Search" aria-label="Search" />
         <button onClick={handleSearch} className="btn btn-outline-success" type="submit">Search</button>
       </form>
 
