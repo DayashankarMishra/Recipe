@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   let searchRef = useRef()
-  let [search,setSearch] = useState('pizza')
-  console.log(search)
+  let [search,setSearch] = useState('pizza');
+  console.log(search);
 
-  let [recipi,setRecipi] = useState([])
+  let [recipi,setRecipi] = useState([]);
   console.log(recipi)
     async function getApi() {
         let res = await fetch(`https://api.edamam.com/search?q=${search}&app_id=be4d4105&app_key=35c0f7a811c9fe94e761d7aed541cb12`)
