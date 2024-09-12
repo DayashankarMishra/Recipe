@@ -12,7 +12,7 @@ const Home = () => {
         let res = await fetch(`https://api.edamam.com/search?q=${search}&app_id=be4d4105&app_key=35c0f7a811c9fe94e761d7aed541cb12`)
         let data = await res.json()
         // console.log(data.hits)
-        setRecipi(data.hits)
+        setRecipi(data.hits);
     }
 
     useEffect(()=>{
